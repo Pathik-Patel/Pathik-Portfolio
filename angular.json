@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "https://pathik-patel.github.io/pathik-portfolio/",
+            
             "outputPath": "dist/pathik-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -91,6 +91,8 @@
             "scripts": []
           }
         }
+        
+        
       }
     }
   }
