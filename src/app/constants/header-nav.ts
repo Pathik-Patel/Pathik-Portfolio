@@ -27,16 +27,16 @@ export const navItems: NavItem[] = [
     activeClassName: 'active'
   },
   {
-    title: 'Portfolio',
-    link: 'portfolio',
+    title: 'Projects',
+    link: 'project',
     className: 'link',
     activeClassName: 'active'
   },
   {
-    title: 'Contact Me',
+    title: 'Contact',
     link: 'contacts',
-    className: 'btn-contact',
-    activeClassName: 'active-btn'
+    className: 'link',
+    activeClassName: 'active'
   },
 ];
 

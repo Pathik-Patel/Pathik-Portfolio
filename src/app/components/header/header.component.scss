@@ -45,7 +45,9 @@ header {
 }
 
 .nav-list .nav-item .link.active {
-  color: var(--primary-color) !important;
+  // color: var(--primary-color) !important;
+  border-bottom: rgb(148, 163, 184) 5px solid;
+  
 }
 
 .logo {
@@ -67,7 +69,7 @@ header {
 .btn-contact {
   display: inline-block;
   font-size: 0.875rem;
-  background-color: var(--primary-color);
+  background-color: var(--border-focus-color);
   border-radius: 50px;
   padding: 0.5rem 0.875rem;
   color: #fff;

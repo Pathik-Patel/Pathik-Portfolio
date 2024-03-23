@@ -21,7 +21,7 @@
   transition: background-color 0.25s;
 
   &.active {
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
+    border-color: var(--border-focus-color);
+    background-color: var(--border-focus-color);
   }
 }
