@@ -170,6 +170,10 @@ hr {
     align-self: center;
   }
 }
+
+.sql{
+  display: none;
+}
 @media (max-width: 767px) {
   .experience-card-info, .experience-card-details{
     width: 100% !important;
@@ -183,6 +187,12 @@ hr {
   hr{
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .sql{
+    display: block;
+  }
+  .mysql{
+    display: none;
   }
  
 }
