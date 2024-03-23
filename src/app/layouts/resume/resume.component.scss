@@ -170,3 +170,20 @@ hr {
     align-self: center;
   }
 }
+@media (max-width: 767px) {
+  .experience-card-info, .experience-card-details{
+    width: 100% !important;
+  }
+  section{
+    margin-top: 3rem;
+  }
+  .container h2{
+    margin-bottom: 1rem;
+  }
+  hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+ 
+}
+

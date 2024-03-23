@@ -42,3 +42,9 @@
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 767px) {
+  section{
+    margin-top: 2rem;
+  }
+}

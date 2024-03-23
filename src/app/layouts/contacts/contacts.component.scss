@@ -107,3 +107,14 @@ form {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 767px) {
+  ul{
+    width: 100% !important;
+    justify-content: start !important;
+  }
+  h2{
+    justify-content: start !important;
+  }
+ 
+}
