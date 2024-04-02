@@ -35,7 +35,7 @@ header {
   display: block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.4vw;
   cursor: pointer;
   color: var(--nav-link-color);
 
@@ -166,7 +166,7 @@ header {
 
 @include respond-above(md) {
   .nav-list .nav-item .link {
-    font-size: 1rem;
+    font-size: 1.4vw;
   }
 
   .btn-contact {

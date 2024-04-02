@@ -5,6 +5,10 @@ section {
   padding-top: 3.125rem;
   margin-top: 0;
 }
+.subjectimage1{
+  height: 50vw;
+  width: 39vw;
+}
 .subjectimage2{
   display: none;
 }
@@ -14,7 +18,7 @@ section {
   flex-wrap: wrap;
   width: 100%;
   row-gap: 3.125rem;
-  column-gap: 9.375rem;
+  column-gap: 5.375rem;
 }
 
 
@@ -22,10 +26,41 @@ section {
   display: flex;
   flex-direction: column;
 }
-
+.landing-details h1{
+  font-size: 5vw;
+  color: #283b57;
+}
 .landing-img {
   display: flex;
   flex-direction: column;
+}
+
+.textwriter{
+  font-size: 2.5vw;
+  font-weight: 500;
+  overflow: hidden;
+}
+.textwriter .text{
+  position: relative;
+}
+.text.sec-text::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f1f5f9;
+  border-left: 2px solid black;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
 }
 
 .profession {
@@ -72,6 +107,50 @@ section {
   }
 }
 
+
+
+
+.caption1{
+  height: 10vw;
+  width: 15vw;
+  position: absolute;
+  left: 46vw;
+  top: 10vw;
+	background-color: #506e99;
+	transform: rotate(20deg);
+	opacity: 0;
+	border-radius: 15vw;
+	z-index: 1;
+}
+.bubble1{
+	width: 0;
+height: 0;
+border-top: 3vw solid transparent;
+border-right: 6vw solid #506e99;
+border-bottom: 3vw solid transparent;
+position: absolute;
+left: 57vw;
+top: 15.5vw;
+transform: rotate(210deg);
+	opacity: 0;
+}
+.cap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	padding: 2vw;
+	transform: none;
+}
+.cap p{
+	position: relative;
+	font-size: 2vw;
+  text-align: center;
+  color: white;
+}
+
+
+
+
 @include respond-above(md) {
   .landing-details {
     flex: 1;
@@ -100,7 +179,7 @@ section {
     overflow: hidden;
     border-radius: 47%;
   }
-  .landing-img{
+  .landing-img, .main{
     width: 100%;
     text-align: center;
     display: flex;
@@ -111,5 +190,18 @@ section {
 
     padding-top: 0rem;
  
+  }
+  .cap, .bubble1{
+    display: none;
+  }
+
+  .landing-details h1{
+    font-size: 8vw;
+    
+  }
+
+  .textwriter{
+    font-size: 5vw;
+    
   }
 }

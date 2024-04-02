@@ -51,7 +51,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.6vw;
   background-color: var(--body-color);
 }
 
@@ -73,19 +73,19 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3vw;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.6vw;
 }
 
 p {
-  margin: 0;
+  // margin: 0;
 }
 
 a {
@@ -118,7 +118,7 @@ section {
 
 .btn {
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 1.4vw;
   background-color: var(--border-focus-color);
   border-radius: 50px;
   padding: 0.625rem 1.5rem;
@@ -134,34 +134,22 @@ section {
 
 @include respond-above(sm) {
   .container {
-    max-width: 540px;
+    max-width: 90vw;
   }
 }
 
 @include respond-above(md) {
-  body {
-    font-size: 1.125rem;
-  }
+  
 
   .container {
-    max-width: 720px;
+    max-width: 90vw;
   }
 
   .btn {
-    font-size: 1rem;
+    font-size: 1.4vw;
   }
 
-  h1 {
-    font-size: 3.125rem;
-  }
-
-  h2 {
-    font-size: 1.875rem;
-  }
-
-  h3 {
-    font-size: 1.375rem;
-  }
+  
 
   section {
     margin-top: 7.5rem;
@@ -170,18 +158,47 @@ section {
 
 @include respond-above(lg) {
   .container {
-    max-width: 960px;
+    max-width: 90vw;
   }
 }
 
 @include respond-above(xl) {
   .container {
-    max-width: 1140px;
+    max-width: 90vw;
   }
 }
 
 @include respond-above(xxl) {
   .container {
-    max-width: 1320px;
+    max-width: 90vw;
   }
 }
+
+
+
+@media (max-width: 767px) {
+ 
+  body{
+    font-size: 3.5vw;
+  }
+
+  h1{
+    font-size: 7vw;
+  }
+
+  h2{
+    font-size: 6vw;
+  }
+ 
+  h3{
+    font-size: 5vw;
+  }
+
+  .btn{
+    font-size: 3vw;
+  }
+
+
+}
+
+

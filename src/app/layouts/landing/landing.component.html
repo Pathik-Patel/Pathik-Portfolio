@@ -4,8 +4,10 @@
       <div class="landing-details" appFade="up">
         <!-- <h3 class="profession">Full-Stack Software Developer</h3> -->
         <h1>Pathik Patel</h1>
-        
-        <p class="description">Passionate Software Engineer | Solving Problems with Code</p>
+        <div class="textwriter" >
+      <span class="text frist-text"> I'm a </span>
+          <span [@textAnimation]="''" class="text sec-text">{{text}}</span>
+        </div>
         <p class="description">I develop Software Solutions using Java, Spring Boot, Python, Django, React, Angular, SQL and NoSQL.</p>
         <ul class="social-icons-container">
           
@@ -31,10 +33,32 @@
           </li>
         </ul>
       </div>
-      <div class="landing-img">
+
+
+
+
+
+      <div class="main" >
+        <div class="pic">
+          <div class="landing-img">
+            <img (mouseenter)="showCaption(true)" (mouseleave)="showCaption(false)" src="assets/img/Subject.png" class="subjectimage1" alt="Pathik Patel" width="500" height="800" priority>
+            <img (mouseenter)="showCaption(true)" (mouseleave)="showCaption(false)" src="assets/img/Subject2.png" class="subjectimage2" alt="Pathik Patel" width="500" height="800" priority>
+          </div>  
+        </div>
+        <div class="caption1 cap" [@fadeInOut]="captionVisible ? 'visible' : 'hidden'">
+          <p>Hiii There!!</p>
+        </div>
+        <div class="bubble bubble1" [@fadeInOut]="captionVisible ? 'visible' : 'hidden'"></div>
+      </div>
+
+
+
+     <!-- <div class="landing-img">
         <img ngSrc="assets/img/Subject.png" class="subjectimage1" alt="Pathik Patel" width="500" height="800" priority>
         <img ngSrc="assets/img/Subject2.png" class="subjectimage2" alt="Pathik Patel" width="500" height="800" priority>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
+
+

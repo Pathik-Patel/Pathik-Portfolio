@@ -85,7 +85,9 @@ hr {
     border-color: var(--primary-color-dark);
   }
 }
-
+.portfolio-h4-tag{
+  font-size: 1.5vw;
+}
 .source-btn {
   fill: var(--social-icon-text-color);
   background: var(--social-icon-color);
@@ -102,6 +104,11 @@ hr {
   fill: var(--social-icon-text-color);
   background: var(--social-icon-color);
   border-color: var(--social-icon-color);
+}
+
+.portfolio-p-tag{
+  font-size: 1.4vw;
+  margin-bottom: 0.7vw;
 }
 
 @include respond-above(md) {
@@ -122,6 +129,10 @@ hr {
   .experience-card-info, .experience-card-details{
     width: 100% !important;
   }
+
+  .experience-card{
+    row-gap: 0;
+  }
   section{
     margin-top: 3rem;
   }
@@ -131,6 +142,16 @@ hr {
   hr{
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  
+
+  .portfolio-p-tag{
+    font-size: 3.7vw;
+   
+  }
+
+  .portfolio-h4-tag{
+    font-size: 4vw;
   }
  
 }

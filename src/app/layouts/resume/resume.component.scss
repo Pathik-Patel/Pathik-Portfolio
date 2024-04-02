@@ -31,16 +31,16 @@ h2 {
 }
 
 .experience-card-info-date {
-  font-size: 1rem;
+  font-size: 1.2vw;
   margin-bottom: 0.313rem;
 }
 
 .experience-card-info-badge {
-  background-color: var(--primary-color);
+  background-color: #2a4974;
   border-radius: 3px;
   color: #fff;
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 1.4vw;
   padding: 0.313rem 0.625rem;
 }
 
@@ -80,20 +80,27 @@ hr {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
+  padding: 2rem;
 }
 
 .education-date {
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 
 .education-title {
-  font-size: 1rem;
+  // font-size: 1rem;
   margin-top: 0.313rem;
   margin-bottom: 0.313rem;
 }
 
 .education-institute {
-  font-size: 1rem;
+  font-size: 1.2vw;
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap:10px;
 }
 
 .skill-card {
@@ -105,17 +112,19 @@ hr {
 
 .skill-info {
   width: 100%;
+  text-align: center; 
 }
 
 .skill-count {
-  font-size: 1.75rem;
+  font-size: 1.2vw;
   align-self: center;
   margin-bottom: 0;
 }
 
 .skill-title {
-  font-size: 1rem;
+  font-size: 1.2vw;
   margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 .skill-progress {
@@ -145,6 +154,10 @@ hr {
   width: 80%;
 }
 
+.resume-p-tag{
+  font-size: 1.4vw;
+  margin-bottom: 0.7vw;
+}
 @include respond-above(md) {
   .experience-card-info {
     flex: 1;
@@ -193,6 +206,37 @@ hr {
   }
   .mysql{
     display: none;
+  }
+
+  .experience-card-details p{
+    font-size: 3.7vw;
+    margin-bottom: 0.7vw !important;
+  }
+
+  .experience-card-info-date {
+    font-size: 3.5vw;
+    
+  }
+
+  .education-date , .education-institute{
+    font-size: 3.5vw;
+  }
+
+  .experience-card-info-badge {
+   
+    font-size: 3vw;
+    padding: 0.313rem 0.625rem;
+  }
+
+  .skill-title {
+    font-size: 3vw;
+    
+  }
+
+
+  .resume-p-tag{
+    font-size: 3.5vw;
+    margin-bottom: 0.7vw;
   }
  
 }
