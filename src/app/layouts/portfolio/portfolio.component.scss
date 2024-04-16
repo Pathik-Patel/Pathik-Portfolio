@@ -57,7 +57,7 @@ hr {
 .projects-card-actions {
   display: flex;
   column-gap: 0.625rem;
-  justify-content: center;
+  justify-content: start;
 }
 
 .projects-card-btn {
@@ -98,6 +98,20 @@ hr {
     background-color: var(--social-icon-hover-color);
     border-color: var(--social-icon-hover-color);
   }
+}
+
+.demo-btn{
+  fill: var(--social-icon-text-color);
+  background: var(--social-icon-color);
+  border-color: var(--social-icon-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: var(--heading-color);
+  font-size: 1.5vw;
 }
 
 .disabled-btn {
